@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from "axios";
 
+import FooterCineFlex from '../FooterCineFlex';
+
 import "./style.css"
 
 export default function SessionPage(Props) {
@@ -27,18 +29,26 @@ export default function SessionPage(Props) {
         );
 	}
 
+    function Session(Props){
 
+        return(
+            <ul>
+            <h1>{`${Props.weekday} - ${Props.date}`}</h1>
+                <li>                     
+                {Props.data.map(el => {return (<div className="session"><h1>{el.name}</h1></div>)})}
+                </li>
+            </ul>
+        )
+    }
+
+   
     return(
         <div className="session-page">
             <h1>Selecione o horário</h1>
             <div className="session-list">
-                <ul>
-                    <li>
-                      <h1>{movieData.days[0].date}</h1>  
-                    </li>
-
-                </ul>
+                {movieData.days.map(el => <Session weekday={el.weekday} date={el.date} data={el.showtimes}/>)}
             </div>
+            <FooterCineFlex img={movieData.posterURL} movieName={movieData.title} movieSession={""}/>
         </div>
     )
 
