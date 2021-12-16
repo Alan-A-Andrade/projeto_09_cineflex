@@ -1,40 +1,108 @@
-.seat-circle {
-    width: 26px;
-    height: 26px;
+.success-page {
+    width: 100vw;
 
-    background: #C3CFD9;
-    border: 1px solid #808F9D;
-    box-sizing: border-box;
-    border-radius: 50%;
+    display: block;
+    position: relative;
 
-    margin: 8px 0px;
+    top: 67px;
 
+    padding-bottom: 117px;
+
+}
+
+.h1-wrapper {
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.seat-circle p {
+.success-page .title {
+    height: 110px;
+    width: 180px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #247A6B;
+    letter-spacing: 0.04em;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-info {
+    width: 100vw;
+    padding: 0px 26px;
+    justify-content: left;
+    align-items: flex-start;
+
+}
+
+.success-info h1 {
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+
+    padding: 10px 0px;
+
+    color: #293845;
+}
+
+
+.reserved-seats-list,
+.reserved-seats-buyers,
+.movie-info {
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 22px;
+    line-height: 26px;
     display: flex;
+    gap: 3px;
+    flex-direction: column;
+    letter-spacing: 0.04em;
+
+    color: #293845;
+}
+
+reserved-seats-list,
+.reserved-seats-buyers,
+.movie-info p {
+    padding: 5px 0px;
+}
+
+.back-home-button {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 20px;
+}
+
+.back-home-button h1 {
+    width: 225px;
+    height: 42px;
+
+    background: #E8833A;
+    border-radius: 3px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 42px;
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
 
-    color: #000000;
-}
-
-.true {}
-
-.false {
-    background: #FBE192;
-    border: 1px solid #F7C52B;
-}
-
-.selected {
-    background: #8DD7CF;
-    border: 1px solid #45BDB0;
+    color: #FFFFFF;
 }

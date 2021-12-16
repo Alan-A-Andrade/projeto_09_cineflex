@@ -14,14 +14,18 @@ export default function Seat(Props){
             return ""
         }
         else if (status === true){
-            Props.onClick(Props.name, "add")
+            Props.onClick(Props.seatId, "add", Props.name)
             setAvailability("selected")
         }
         else{
-            Props.onClick(Props.name, "remove")
+
+            const confirmBox = window.confirm("gostaria realmente de remover o assento e apagar os dados?")
+
+            if(confirmBox===true){
+            Props.onClick(Props.seatId, "remove", Props.name)
             setAvailability(true)
         }
-        
+        }
 
     }
 
