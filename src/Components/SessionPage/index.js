@@ -18,7 +18,7 @@ export default function SessionPage(Props) {
         request.then( answer => {
             setMovieData(answer.data)
         });
-
+// eslint-disable-next-line
     },[]);
 
     if(movieData.length === 0) {

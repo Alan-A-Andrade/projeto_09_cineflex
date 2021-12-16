@@ -34,7 +34,7 @@ export default function SeatsPage() {
         request.then( answer => {
             setSessionData(answer.data)
         });
-
+// eslint-disable-next-line
     },[]);
 
     if(sessionData.length === 0) {
