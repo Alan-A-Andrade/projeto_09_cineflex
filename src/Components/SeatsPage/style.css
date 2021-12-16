@@ -1,0 +1,133 @@
+.seats-page {
+    width: 100vw;
+
+    display: block;
+    position: relative;
+
+    top: 67px;
+
+    padding-bottom: 117px;
+
+}
+
+.seats-page>h1 {
+    height: 110px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #293845;
+    letter-spacing: 0.04em;
+
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.seats-list {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    position: relative;
+    top: -19px;
+
+    padding: 0px 24px 0px 24px;
+
+}
+
+.seats-legend {
+    display: flex;
+    justify-content: center;
+    gap: 69px;
+    position: relative;
+    top: -15px;
+}
+
+.seats-legend>div>p {
+    position: relative;
+    top: 26px;
+}
+
+.buyer-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+
+}
+
+.buyer-info:first-child {
+    padding: 31px 0px 20px 0px;
+}
+
+.buyer-info>h1 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    position: relative;
+    left: -112px;
+}
+
+.buyer-info h1 {
+    padding: 5px;
+}
+
+.buyer-info input::placeholder {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #AFAFAF;
+}
+
+.buyer-info input {
+    width: 327px;
+    height: 51px;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    padding-left: 15px;
+
+    background: #FFFFFF;
+    border: 1px solid #D5D5D5;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.buy-button {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy-button h1 {
+    width: 225px;
+    height: 42px;
+
+    background: #E8833A;
+    border-radius: 3px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 42px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+}

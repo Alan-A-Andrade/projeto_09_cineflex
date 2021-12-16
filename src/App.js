@@ -8,6 +8,8 @@ import "./Assets/style.css"
 import HomePage from "./Components/HomePage";
 import HeaderCineflex from "./Components/HeaderCineflex"
 import SessionPage from "./Components/SessionPage";
+import SeatsPage from "./Components/SeatsPage";
+import SuccessPage from "./Components/SuccessPage";
 
 export default function App(){
 
@@ -39,7 +41,9 @@ export default function App(){
             <HeaderCineflex/>
             <Routes>
                 <Route path="/" element={<HomePage data={movieList}/>}></Route>
-                {movieList.map(el => <Route path={`sessoes/${el.id}`} element={<SessionPage movieID={el.id}/>}></Route>)}
+                <Route path="sessoes/:movieId" element={<SessionPage/>}></Route>
+                <Route path="assentos/:sessionId" element={<SeatsPage/>}></Route>
+                <Route path="sucesso" element={<SuccessPage/>}></Route>
             </Routes>
         </BrowserRouter>
 
