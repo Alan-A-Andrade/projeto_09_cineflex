@@ -1,108 +1,108 @@
 .success-page {
-    width: 100vw;
+  width: 100vw;
 
-    display: block;
-    position: relative;
+  display: block;
+  position: relative;
 
-    top: 67px;
+  top: 67px;
 
-    padding-bottom: 117px;
+  padding-bottom: 117px;
 
 }
 
 .h1-wrapper {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .success-page .title {
-    height: 110px;
-    width: 180px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    color: #247A6B;
-    letter-spacing: 0.04em;
-    text-align: center;
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
+  height: 110px;
+  width: 180px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #247A6B;
+  letter-spacing: 0.04em;
+  text-align: center;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .success-info {
-    width: 100vw;
-    padding: 0px 26px;
-    justify-content: left;
-    align-items: flex-start;
+  width: 100vw;
+  padding: 0px 26px;
+  justify-content: left;
+  align-items: flex-start;
 
 }
 
 .success-info h1 {
 
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.04em;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
 
-    padding: 10px 0px;
+  padding-top: 35px;
 
-    color: #293845;
+  color: #293845;
 }
 
 
 .reserved-seats-list,
 .reserved-seats-buyers,
 .movie-info {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 26px;
-    display: flex;
-    gap: 3px;
-    flex-direction: column;
-    letter-spacing: 0.04em;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+  letter-spacing: 0.04em;
 
-    color: #293845;
+  color: #293845;
 }
 
 reserved-seats-list,
 .reserved-seats-buyers,
 .movie-info p {
-    padding: 5px 0px;
+  padding: 5px 0px;
 }
 
 .back-home-button {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .back-home-button h1 {
-    width: 225px;
-    height: 42px;
+  width: 225px;
+  height: 42px;
 
-    background: #E8833A;
-    border-radius: 3px;
+  background: #E8833A;
+  border-radius: 3px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 42px;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 42px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
 
-    color: #FFFFFF;
+  color: #FFFFFF;
 }

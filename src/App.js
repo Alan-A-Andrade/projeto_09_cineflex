@@ -17,38 +17,34 @@ export default function App(){
 
     useEffect(() =>{
 
-        const request = axios.get("https://mock-api.driven.com.br/api/v4/cineflex/movies");
+      const request = axios.get("https://mock-api.driven.com.br/api/v4/cineflex/movies");
 
-        request.then( answer => {
-            setMovieList(answer.data)
-        });
+      request.then( answer => {
+        setMovieList(answer.data)
+      });
 
     },[]);
 
     if(movieList.length === 0) {
 		return (
-            <div>
-                Carregando
-            </div>
-        );
+      <div>
+        Carregando
+      </div>
+    );
 	}
 
 
 
-    return (
+  return (
 
-        <BrowserRouter>
-            <HeaderCineflex/>
-            <Routes>
-                <Route path="/" element={<HomePage data={movieList}/>}></Route>
-                <Route path="sessoes/:movieId" element={<SessionPage/>}></Route>
-                <Route path="assentos/:sessionId" element={<SeatsPage/>}></Route>
-                <Route path="sucesso" element={<SuccessPage/>}></Route>
-            </Routes>
-        </BrowserRouter>
-
-
-    );
-
-
+    <BrowserRouter>
+      <HeaderCineflex/>
+      <Routes>
+        <Route path="/" element={<HomePage data={movieList}/>}></Route>
+        <Route path="sessoes/:movieId" element={<SessionPage/>}></Route>
+        <Route path="assentos/:sessionId" element={<SeatsPage/>}></Route>
+        <Route path="sucesso" element={<SuccessPage/>}></Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }

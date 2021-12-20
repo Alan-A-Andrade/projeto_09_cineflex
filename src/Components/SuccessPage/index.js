@@ -25,8 +25,8 @@ export default function SuccessPage(Props){
             {requestTickets.compradores.map((el,id)=> {
                 return(
                 <div key={`buyer_${id}`} className="reserved-seats-buyers">
-                <p>{`Nome: ${el.nome}`}</p>
-                <p>{`CPF: ${el.cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4")}`}</p>
+                    <p>{`Nome: ${el.nome}`}</p>
+                    <p>{`CPF: ${el.cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4")}`}</p>
                 </div>
                 )
             })}
